@@ -1,0 +1,280 @@
+/**Fonts**/
+@font-face {
+  font-family: 'light';
+  src: URL('Font/Barlow-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'med';
+  src: URL('Font/Barlow-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'reg';
+  src: URL('Font/Barlow-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'boilgo';
+  src: URL('Font/Boilgo.otf') format('opentype');
+}
+
+body{
+  font-family: 'reg' !important;
+}
+/**this is the sticky style**/
+
+img {
+  max-width: 80%;
+  /* max-height: 300px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+
+}
+
+h2 {
+  border-bottom: 2px dashed rgb(164, 162, 162, 0.3);
+  font-family: 'boilgo' !important;
+  font-size: 70px !important;
+  color: #9d846e !important;
+
+
+  /* text-align: center; */
+}
+
+
+
+.header {
+
+    background: url('IMG/header3.jpg') no-repeat 50% 0;
+    /* background-repeat: repeat-y;
+    background-repeat: repeat-x; */
+    background-size: 100%;
+    background-position: 0% 90%;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    font-family: 'reg' !important;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    min-height: 300px;
+}
+
+#navbar1 {
+    overflow: hidden;
+    /*bar color*/
+    background-color: #F7C7B6;
+    z-index: 1;
+}
+
+#navbar1 a {
+    float: left;
+    display: block;
+    color:  #776258;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    transition-duration: 0.4s;
+}
+
+.active:link {
+    font-family: 'reg' !important;
+  }
+
+#navbar1 a:hover {
+  color: white;
+  }
+
+.topnav-right {
+    float: right;
+  }
+
+.content {
+    padding: 16px;
+}
+
+.bookButton {
+  background-color: white; /* Green */
+  border: 1.5px solid #F7C7B6;
+  border-radius: 25px;
+  min-width: 200px;
+  color: #F7C7B6;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bookButton:hover {
+  background-color:#F7C7B6;
+  color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+/**grid style**/
+
+.grid-box {
+    margin: auto;
+    width: 80%; /*Gray Box*/
+    border: 1.5px solid;
+    padding: 50px; /*from text to box spacing*/
+    border-radius: 15px;
+  }
+  
+  .bg-grid {
+    /*align-content: center;*/
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgb(255, 255, 255); 
+    border: 1.5px solid #ffffff;
+    border-radius: 15px;
+    /*width: 50%;*/
+    /* vertical-align: middle; */
+  }
+  
+  /**image grid**/
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; }
+    .gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease; }
+    .gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+    
+  @media (max-width: 450px) {
+    .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    }
+  }
+    
+    @media (max-width: 400px) {
+    .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    }
+  }
+  
+  /*grid*/
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    padding-right: 30px;
+  }
+
+  .column1 {
+    flex: 50%;
+    max-width: 50%;
+    padding-left: 30px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  table {
+    width:100%;
+  }
+
+  table, th, td {
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 15px !important; 
+    text-align: left;
+  }
+
+  table#t01 tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  table#t01 tr:nth-child(odd) {
+   background-color: #fff;
+  }
+
+  table#t01 th {
+    background-color: black;
+    color: white;
+  }
+
+.container{
+  max-width: 95%;
+}
+
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(228, 177, 159);
+  color: white;
+  min-height: 200px;
+}
+
+.appointment {
+  text-align: center;
+  color: #F7C7B6;
+  font-size: 40px;
+  margin: 30px;
+}
+
+.tab-content{
+  max-height: 400px;
+  overflow: auto;
+
+}
